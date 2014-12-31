@@ -1,0 +1,13 @@
+{
+    "name": "coverslide/abcaster",
+    "description": "A Silex app for creating RSS feeds for audiobooks",
+    "authors": [
+        {
+            "name": "Richard Hoffman",
+            "email": "coverslide@gmail.com"
+        }
+    ],
+    "require": {
+        "silex/silex": "@stable"
+    }
+}
