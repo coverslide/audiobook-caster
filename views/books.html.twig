@@ -1,0 +1,16 @@
+{% extends "layout.html.twig" %}
+
+{% block body %}
+    <h3>Books for {{ author }}:</h3>
+    <ul>
+        {% for book in books %}
+            <li>
+                <a href="{{ app.url_generator.generate('files', {author: author, book: book}) }}">{{book}}</a>
+                <sub>
+                    (<a href="{{ app.url_generator.generate('feed', {author: author, book: book}) }}">feed</a>)
+                </sub>
+            </li>
+        {% endfor %}
+    </ul>
+{% endblock %}
+

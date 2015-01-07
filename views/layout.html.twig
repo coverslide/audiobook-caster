@@ -1,0 +1,13 @@
+<!doctype html>
+<html>
+    <head>
+        <title>{{ title | default('AudioBookCaster') }}</title>
+        <link rel="stylesheet" href="/main.css" />
+    </head>
+    <body>
+        <h1><a href="{{ app.url_generator.generate('index') }}">Home</a></h1>
+        <div class="content">
+            {{ block("body") }}
+        </div>
+    </body>
+</html>

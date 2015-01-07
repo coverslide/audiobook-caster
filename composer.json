@@ -1,5 +1,5 @@
 {
-    "name": "coverslide/abcaster",
+    "name": "coverslide/audiobookcaster",
     "description": "A Silex app for creating RSS feeds for audiobooks",
     "authors": [
         {
@@ -7,7 +7,12 @@
             "email": "coverslide@gmail.com"
         }
     ],
+    "autoload": {
+        "psr-4": {"Coverslide\\AudiobookCaster\\": "src/"}
+    },
     "require": {
-        "silex/silex": "@stable"
+        "silex/silex": "@stable",
+        "twig/twig": "@stable",
+        "symfony/serializer": "~2.6"
     }
 }

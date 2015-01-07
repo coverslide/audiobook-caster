@@ -1,0 +1,14 @@
+{% extends "layout.html.twig" %}
+
+{% block body %}
+    <h3>Files for <a href="{{ app.url_generator.generate('books', {author: author}) }}">{{ author }}</a> - {{ book }} (<a href="{{ app.url_generator.generate('feed', {author: author, book: book}) }}">feed</a>)</h3>
+    <ul>
+        {% for file in files %}
+            <li>
+                <a href="{{ app.url_generator.generate('audio', {author: author, book: book, file: file.filename}) }}">{{ file.filename }}</a>
+                {{ file.filesize | human_filesize() }}
+            </li>
+        {% endfor %}
+    </ul>
+{% endblock %}
+

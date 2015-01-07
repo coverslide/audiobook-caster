@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "b0c601901438fb50ae737ed92ac3fc04",
+    "hash": "fc43c16a1d12970c0f69f4f860efd0b9",
     "packages": [
         {
             "name": "pimple/pimple",
@@ -477,15 +477,121 @@
                 "url"
             ],
             "time": "2014-12-02 20:15:53"
+        },
+        {
+            "name": "symfony/serializer",
+            "version": "v2.6.1",
+            "target-dir": "Symfony/Component/Serializer",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/Serializer.git",
+                "reference": "b527ccecd455fc70a805fb25b81e08eb37f3fc5d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/Serializer/zipball/b527ccecd455fc70a805fb25b81e08eb37f3fc5d",
+                "reference": "b527ccecd455fc70a805fb25b81e08eb37f3fc5d",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.3"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.6-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Symfony\\Component\\Serializer\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Symfony Community",
+                    "homepage": "http://symfony.com/contributors"
+                },
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                }
+            ],
+            "description": "Symfony Serializer Component",
+            "homepage": "http://symfony.com",
+            "time": "2014-12-02 20:19:20"
+        },
+        {
+            "name": "twig/twig",
+            "version": "v1.16.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/twigphp/Twig.git",
+                "reference": "6dc11a1e8ecfc30e2c68aaeb218148409d8e68af"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/twigphp/Twig/zipball/6dc11a1e8ecfc30e2c68aaeb218148409d8e68af",
+                "reference": "6dc11a1e8ecfc30e2c68aaeb218148409d8e68af",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.2.4"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.16-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Twig_": "lib/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com",
+                    "homepage": "http://fabien.potencier.org",
+                    "role": "Lead Developer"
+                },
+                {
+                    "name": "Armin Ronacher",
+                    "email": "armin.ronacher@active-4.com",
+                    "role": "Project Founder"
+                },
+                {
+                    "name": "Twig Team",
+                    "homepage": "http://twig.sensiolabs.org/contributors",
+                    "role": "Contributors"
+                }
+            ],
+            "description": "Twig, the flexible, fast, and secure template language for PHP",
+            "homepage": "http://twig.sensiolabs.org",
+            "keywords": [
+                "templating"
+            ],
+            "time": "2014-12-25 19:58:19"
         }
     ],
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
-        "silex/silex": 0
+        "silex/silex": 0,
+        "twig/twig": 0
     },
     "prefer-stable": false,
+    "prefer-lowest": false,
     "platform": [],
     "platform-dev": []
 }
